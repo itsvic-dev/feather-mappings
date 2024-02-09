@@ -817,7 +817,7 @@ c	net/minecraft/client/C_0877775		net/minecraft/client/C_0877775
 		p	1			p_1
 	m	(I)V	m_1154571		m_1154571
 		p	1			p_1
-c	net/minecraft/client/C_1331819		net/minecraft/client/C_1331819
+c	net/minecraft/client/C_1331819		net/minecraft/client/OptionsManager
 	f	[Ljava/lang/String;	f_3657427		f_3657427
 	f	[Ljava/lang/String;	f_1475560		f_1475560
 	f	Z	f_8013542		f_8013542
@@ -900,24 +900,24 @@ c	net/minecraft/client/C_3987516		net/minecraft/client/C_3987516
 	m	()V	run		run
 c	net/minecraft/client/C_4434943		net/minecraft/client/C_4434943
 	m	()V	<init>		<init>
-c	net/minecraft/client/C_5664496		net/minecraft/client/C_5664496
-	f	Lnet/minecraft/unmapped/C_7952195;	f_1273243		f_1273243
-	f	Z	f_1107821		f_1107821
-	f	I	f_0545414		f_0545414
-	f	I	f_5990000		f_5990000
+c	net/minecraft/client/C_5664496		net/minecraft/client/Minecraft
+	f	Lnet/minecraft/unmapped/C_7952195;	f_1273243		interactionManager
+	f	Z	f_1107821		fullscreen
+	f	I	f_0545414		width
+	f	I	f_5990000		height
 	f	Lnet/minecraft/client/C_8036556;	f_2102728		f_2102728
 	f	Lnet/minecraft/client/C_8739928;	f_8077878		f_8077878
 	f	Lnet/minecraft/unmapped/C_5553933;	f_5854988		f_5854988
-	f	Lnet/minecraft/unmapped/C_8398976;	f_4021716		f_4021716
-	f	Lnet/minecraft/unmapped/C_1023567;	f_6058446		f_6058446
-	f	Lnet/minecraft/unmapped/C_6559556;	f_9322491		f_9322491
+	f	Lnet/minecraft/unmapped/C_8398976;	f_4021716		worldRenderer
+	f	Lnet/minecraft/unmapped/C_1023567;	f_6058446		inputPlayerEntity
+	f	Lnet/minecraft/unmapped/C_6559556;	f_9322491		particleManager
 	f	Lnet/minecraft/client/C_8730536;	f_2424468		f_2424468
 	f	Ljava/lang/String;	f_3533455		f_3533455
-	f	Ljava/awt/Canvas;	f_0769488		f_0769488
+	f	Ljava/awt/Canvas;	f_0769488		canvas
 	f	Z	f_3516533		f_3516533
 	f	Z	f_1118421		f_1118421
 	f	Lnet/minecraft/unmapped/C_0876962;	f_9413506		f_9413506
-	f	Lnet/minecraft/unmapped/C_3831727;	f_0426313		f_0426313
+	f	Lnet/minecraft/unmapped/C_3831727;	f_0426313		textRenderer
 	f	Lnet/minecraft/unmapped/C_3020744;	f_0723335		f_0723335
 	f	Lnet/minecraft/client/C_0877775;	f_7424826		f_7424826
 	f	Lnet/minecraft/unmapped/C_0259655;	f_4267957		f_4267957
@@ -934,13 +934,13 @@ c	net/minecraft/client/C_5664496		net/minecraft/client/C_5664496
 	f	Lnet/minecraft/client/C_1331819;	f_9967940		f_9967940
 	f	Lnet/minecraft/unmapped/C_1872000;	f_3843367		f_3843367
 	f	Lnet/minecraft/client/C_0113445;	f_3438392		f_3438392
-	f	Ljava/io/File;	f_3475389		f_3475389
+	f	Ljava/io/File;	f_3475389		workDir
 	f	[J	f_4430574		f_4430574
 	f	I	f_4816543		f_4816543
 	f	Lnet/minecraft/unmapped/C_1703615;	f_2311908		f_2311908
 	f	Lnet/minecraft/unmapped/C_2366878;	f_7652878		f_7652878
 	f	Ljava/io/File;	f_9479876		f_9479876
-	f	Z	f_4309051		f_4309051
+	f	Z	f_4309051		isRunning
 	f	Ljava/lang/String;	f_0489718		f_0489718
 	f	J	f_2034091		f_2034091
 	f	Z	f_0520296		f_0520296
@@ -956,7 +956,7 @@ c	net/minecraft/client/C_5664496		net/minecraft/client/C_5664496
 	m	(Lnet/minecraft/client/C_7887747;)V	m_2432776		m_2432776
 		p	1			p_1
 	m	()Ljava/io/File;	m_7340082		m_7340082
-	m	(Lnet/minecraft/unmapped/C_3020744;)V	m_6408915		m_6408915
+	m	(Lnet/minecraft/unmapped/C_3020744;)V	m_6408915		setScreen
 		p	1			p_1
 	m	()V	m_4218600		m_4218600
 	m	()V	run		run
@@ -1061,10 +1061,10 @@ c	net/minecraft/client/C_8739928		net/minecraft/client/C_8739928
 	m	(F)V	<init>		<init>
 		p	1			p_1
 	m	()V	m_4325647		m_4325647
-c	net/minecraft/client/C_8938952		net/minecraft/client/C_8938952
-	f	F	f_4140387		f_4140387
-	f	[Ljava/lang/String;	f_4481087		f_4481087
-	f	Ljava/lang/String;	f_4536664		f_4536664
+c	net/minecraft/client/C_8938952		net/minecraft/client/gui/screen/TitleScreen
+	f	F	f_4140387		bounceTimer
+	f	[Ljava/lang/String;	f_4481087		splashMessages
+	f	Ljava/lang/String;	f_4536664		splashMessage
 	m	()V	<init>		<init>
 	m	()V	m_2450377		m_2450377
 	m	(CI)V	m_6992336		m_6992336

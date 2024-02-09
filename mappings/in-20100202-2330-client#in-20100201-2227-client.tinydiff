@@ -1,7 +1,7 @@
 tiny	2	0
 c	net/minecraft/client/C_8938952
-	f	[Ljava/lang/String;	f_4481087	f_4481087	
-	f	Ljava/lang/String;	f_4536664	f_4536664	
+	f	[Ljava/lang/String;	f_4481087	splashMessages	
+	f	Ljava/lang/String;	f_4536664	splashMessage	
 c	net/minecraft/unmapped/C_0124240	net/minecraft/client/render/model/entity/QuadrupedModel	
 	f	Lnet/minecraft/unmapped/C_6697291;	f_3332231	head	
 	f	Lnet/minecraft/unmapped/C_6697291;	f_8955391	body	

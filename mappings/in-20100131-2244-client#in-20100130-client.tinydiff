@@ -14,9 +14,9 @@ c	net/minecraft/client/C_0113445	net/minecraft/client/C_0113445
 	m	()V	m_2934395	m_2934395	
 c	net/minecraft/client/C_5664496
 	f	Lnet/minecraft/client/C_0113445;	f_3438392	f_3438392	
-	f	Ljava/io/File;	f_3475389	f_3475389	
-c	net/minecraft/client/C_8938952	net/minecraft/client/C_8938952	
-	f	F	f_4140387	f_4140387	
+	f	Ljava/io/File;	f_3475389	workDir	
+c	net/minecraft/client/C_8938952	net/minecraft/client/gui/screen/TitleScreen	
+	f	F	f_4140387	bounceTimer	
 	m	()V	<init>	<init>	
 	m	()V	m_2450377	m_2450377	
 	m	(CI)V	m_6992336	m_6992336	
